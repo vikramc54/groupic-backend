@@ -1,8 +1,6 @@
 declare namespace NodeJS {
     interface ProcessEnv {
-        NODE_ENV: 'development' | 'production' | 'test';
+        NODE_ENV: "dev" | "prod";
         PORT?: string;
-        // DATABASE_URL: string;
-        // JWT_SECRET: string;
     }
 }  
