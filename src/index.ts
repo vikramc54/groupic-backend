@@ -1,5 +1,6 @@
 import express from "express";
 import errorHandler from "@/middleware/errors";
+import env from "@/utils/env-validator";
 
 const app = express();
 
@@ -13,7 +14,7 @@ app.get("/", (_req, res) => {
 
 app.use(errorHandler);
 
-const port = process.env.PORT || 8000;
+const port = env.PORT || 8000;
 app.listen(port, () => {
     console.log(`Server started at ${port}`);
 });

@@ -1,4 +1,5 @@
 import { HttpStatusCodes } from "@/enums/http";
+import HttpException from "@/exceptions/HttpException";
 import { Request, Response, NextFunction } from "express";
 
 function errorHandler(err: Error, req: Request, res: Response, next: NextFunction) {

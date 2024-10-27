@@ -1,4 +1,5 @@
 import { HttpStatusCodes } from "../enums/http";
+import HttpException from "./HttpException";
 
 class BadRequestException extends HttpException {
     constructor(message: string="Bad Request", data?: any) {
