@@ -1,3 +1,6 @@
+# IGNORE BUILD FOLDER
+dist
+
 # IGNORE NODE MODULES AND ENV
 node_modules
 .env
